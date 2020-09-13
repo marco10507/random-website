@@ -6,8 +6,11 @@ const port =  process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:false}));
 
+
+const mongoUrl = process.env.MONGO_URL || 'mongodb://localhost/cases';
+
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/cases',  {useNewUrlParser: true});
+mongoose.connect(mongoUrl,  {useNewUrlParser: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
