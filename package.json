@@ -9,6 +9,11 @@
   "author": "Marco Pierre",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "modern-css-reset": "^1.1.1",
+    "mongoose": "^5.10.5",
+    "save": "^2.4.0"
   }
 }

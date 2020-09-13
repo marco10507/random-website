@@ -3,29 +3,30 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Potenza</title>
+<link rel="stylesheet" type="text/css" href="css/vendors/reset-css/reset.min.css" />
 <link rel="stylesheet" type="text/css" href="css/contact-form.css" />
 </head>
 <body>
 <div class="contact-us-container">
   <h2 class="contact-us-title">CONTACT US</h2>
-  <form class="contact-us-form" action="index.html" method="post">
+  <form class="contact-us-form" action="/new-case" method="post">
     <div class="contact-us-form-full-name">
       <div class="contact-us-form-item">
         <label for="first-name">Name</label>
-        <input id="first-name" type="text">
+        <input id="first-name" type="text" name="firstName">
       </div>
       <div class="contact-us-form-item">
         <label for="last-name">Last Name</label>
-        <input id="last-name" type="text">
+        <input id="last-name" type="text" name="lastName">
       </div>
     </div>
     <div class="contact-us-form-item">
       <label for="email">Email</label>
-      <input id="email" type="email">
+      <input id="email" type="email" name="email">
     </div>
     <div class="contact-us-form-item">
       <label for="description">Description</label>
-      <textarea id="description"></textarea>
+      <textarea id="description" name="description"></textarea>
     </div>
     <div class="contact-us-form-item">
       <input type="submit" value="SUBMIT">
